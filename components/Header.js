@@ -21,7 +21,7 @@ function Header() {
 
   return (
     <div className="shadow-sm border-b bg-white sticky top-0 z-50">
-      <div onClick={() => router.push('localhost:3000')} className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
+      <div onClick={() => router.push('/')} className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
         {/* left */}
         <div className="relative hidden lg:inline-grid w-24 cursor-pointer">
           <Image
@@ -30,7 +30,7 @@ function Header() {
             objectFit="contain"
           />
         </div>
-        <div onClick={() => router.push('localhost:3000')} className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer">
+        <div onClick={() => router.push('/')} className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer">
           <Image
             src="https://1000logos.net/wp-content/uploads/2017/02/insta-logo.png"
             layout="fill"
@@ -54,7 +54,7 @@ function Header() {
 
         {/* right */}
         <div className="flex items-center justify-end space-x-4">
-          <HomeIcon onClick={() => router.push('localhost:3000')} className="navBtn" />
+          <HomeIcon onClick={() => router.push('/')} className="navBtn" />
           <MenuIcon className="h-6 md:hidden cursor-pointer" />
 
 
