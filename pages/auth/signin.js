@@ -19,7 +19,9 @@ function signIn({ providers }) {
               <button
                 className="p-3 bg-blue-500 rounded-lg text-white"
                 onClick={() =>
-                  SignIntoProvider(provider.id, { callbackUrl: "/" })
+                  SignIntoProvider(provider.id, {
+                    callbackUrl: "https://localhost:3000",
+                  })
                 }
               >
                 Sign in with {provider.name}
